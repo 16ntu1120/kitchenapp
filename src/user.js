@@ -6,7 +6,7 @@ import {
   Text,
 } from 'react-native';
 
-class HomeScreen extends React.Component{
+class UserScreen extends React.Component{
   render(){
     return (
       <View style = {{
@@ -14,15 +14,15 @@ class HomeScreen extends React.Component{
         alignItems : 'center',
         justifyContent : 'center'
       }}>
-        <Text> Home Screen </Text>
+        <Text> User Screen </Text>
         <TouchableOpacity
-          onPress = {() => this.props.navigation.navigate('User')}
+          onPress = {() => this.props.navigation.navigate('Home')}
         >
-          <Text>Go to User</Text>
+          <Text>Go to Home</Text>
         </TouchableOpacity>
       </View>
     );
   }
 };
 
-export default HomeScreen;
+export default UserScreen;
